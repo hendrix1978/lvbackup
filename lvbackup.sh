@@ -1,8 +1,8 @@
 #!/bin/bash
-BACKUPDAE`date +'%Y_%m_%d'`
+BACKUPDAE=`date +'%Y_%m_%d'`
 PASSWD='' # password to the save
-BACKUPPATH=/media/hendrix/bacup02/lvsave
-LVLIST=/root/.lvs
+BACKUPPATH=/mnt/backup # a path to the backup
+LVLIST=/root/.lvs # a list of partitions that you want to save in a text file
 
 if !([ -d $BACKUPPATH  ]); then
     echo "$BACKUPPATH not exist..."
